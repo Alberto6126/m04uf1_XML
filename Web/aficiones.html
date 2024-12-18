@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    height: 100%;
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Aficiones</title>
+        <meta charset="UTF-8">
+        <style>
+            html{
+                height: 100%;
+            }
+            body{
+                height: 100%;
+                margin: 0;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background: rgb(22, 0, 22);
+                background-image: linear-gradient(300deg, #000000, #030020);}
+            h1{
+                text-align: center;
+                color: #FFFFF5;
+                font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 6.5px;
+                font-size: 60px;
+                margin-top: 0px;
+                line-height: 10px;
+                background: rgb(22, 0, 22);
+                background-image: linear-gradient(90deg, #290c0c, #1b0424);
+                padding: 70px;
+                padding-top: 40px;
+
+            }
+            h2{
+                margin-top: 30px;
+                text-align: center;
+                color: hwb(59 54% 0%);
+                font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 2px;
+                line-height: 2px;
+                margin-bottom: 30px;
+            }
+            p{ 
+                text-align: center;
+                font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
+                color: #ffffff;
+                position:relative;
+	            margin:0 auto;
+                margin-top: 80px;
+                margin-bottom: 40px;
+	            width:524px;
+	            } 
+
+            #ul1{
+                outline-color: white;
+                outline-width: 2px;
+                outline-style: solid;
+                border-radius: 10px;
+                font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
+                color: #ffffff;
+                background: rgb(56, 56, 56);              
+                background: rgb(22, 0, 22);
+                background-image: linear-gradient(90deg, #290c0c, #1b0424);
+                position:relative;
+	            margin:0 auto;
+                margin-bottom: 40px;
+	            padding:30px;
+	            width:755px;
+                line-height: 30px;
+            }
+            #ul2{
+                font-family: 'Ubuntu mono','Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+                list-style: none;
+                display: flex;
+                justify-content:center;
+            }
+            #ul2 >li > a {
+                outline-color: white;
+                outline-width: 3px;
+                outline-style: solid;
+                margin-left: 0px;
+                margin-right: 25px;
+                border-radius: 15px;
+                display:block;
+                padding: 15px 20px;
+                color: white;
+                text-decoration: none;
+            }
+            #naranja{
+                color: rgb(255, 204, 109);
+                font-style:normal;
+            }
+            #violeta{
+                color: rgb(255, 106, 223);
+                font-style:normal;
+            }
+            #azul{
+                color: #039dc4;
+            }            
+            #img {
+                text-align: center;
+                }
+            #img1,#img2{
+                border-radius: 20px;
+                outline-style: solid;
+                outline-color: white;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            Aficiones
+        </h1>
+            
+            <h2>Cuando no estoy ocupado estudiando, disfruto de:</h2>
+            <ul id="ul1">
+                <li><strong id="azul">Deporte:</strong> Salgo a correr y a nadar casualmente para despejar mi mente y mantenerme ocupado.</li>
+                <li><strong id="azul">Espacio:</strong> Desde pequeño me ha interesado el espacio, soy gran fanático de divulgadores como Carl Sagan.</li>
+                <li><strong id="azul">Familia y pareja:</strong> La mayor parte del día la paso con mi pareja y con mi familia, trato de equilibrar mi vida de estudiante con mi familia para seguir siendo optimista de cara al futuro.</li>
+                <li><strong id="azul">Mods y juegos:</strong> Cada vez que termino enganchado a un juego intento buscar la forma de personalizarlo a mi gusto, la mayoría de veces los juegos no nos dejan un gran abanico de posibilidades para modificarlos de forma fácil, pero en los casos donde el juego no dificulta ser modificado, disfruto añadiendo contenido a estos juegos para entretenerme más</li>
+            </ul>
+            <div id="img"> <!--No he encontrado otra forma de centrar las imagenes que no sea con un div o con un contenedor-->
+                <img id="img1" src="img/assetto.webp"><img id="img2" src="img/ksp_logo.webp">
+            </div>
+                <!--Pie de página-->
+        <ul id="ul2">
+            <li><a href="portada.html">Portada</a></li>
+            <li><a href="cv.html" >Curriculum</a></li>  
+            <li><a href="aficiones.html">Aficiones</a></li>
+            <li><a href="juego.html">Juego</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </body>
+</html>
