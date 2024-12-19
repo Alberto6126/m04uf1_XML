@@ -17,28 +17,28 @@
                 background-attachment: fixed;
                 background: rgb(22, 0, 22);
                 background-image: linear-gradient(300deg, #000000, #030020);}
-            h1{
+                h1{
                 text-align: center;
                 color: #FFFFF5;
                 font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 letter-spacing: 6.5px;
+                line-height: 60px;
                 font-size: 60px;
-                margin-top: 0px;
-                line-height: 10px;
+                margin-top: -5px;
                 background: rgb(22, 0, 22);
                 background-image: linear-gradient(90deg, #290c0c, #1b0424);
                 padding: 70px;
-                padding-top: 40px;
+                padding-top: 30px;
+                padding-bottom: 80px;
 
             }
             h2{
-                margin-top: -70px;
+                margin-top: -135px;
                 text-align: center;
                 color: hwb(59 54% 0%);
                 font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                letter-spacing: 2px;
-                line-height: 2px;
                 margin-bottom: -30px;
+                padding: 20px;
             }
             p{ 
                 text-align: center;
@@ -51,7 +51,7 @@
 	            width:524px;
 	            } 
 
-            #ul1{
+            .ul1{
                 outline-color: white;
                 outline-width: 2px;
                 outline-style: solid;
@@ -68,13 +68,13 @@
 	            width:700px;
                 line-height: 30px;
             }
-            #ul2{
+            .ul2{
                 font-family: 'Ubuntu mono','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 list-style: none;
                 display: flex;
                 justify-content:center;
             }
-            #ul2 >li > a {
+            .ul2 >li > a {
                 outline-color: white;
                 outline-width: 3px;
                 outline-style: solid;
@@ -86,29 +86,39 @@
                 color: white;
                 text-decoration: none;
             }
-            #naranja{
+            .naranja{
                 color: rgb(255, 204, 109);
                 font-style:normal;
             }
-            #violeta{
+            .violeta{
                 color: rgb(255, 106, 223);
                 font-style:normal;
             }
-            #azul{
+            .azul{
                 color: #039dc4;
+            }
+            .tituloAzul{
+                list-style: none;
+                margin-left: -10px;
+            }
+            li{
+                margin-left: 30px;
             }
         </style>
     </head>
     <body>
         <h1>
-            Hola
+            Juego en Javascript
         </h1>
+        <h2>
+            Juego en javascript
+        </h2>
         <p>
            Aquí tendría que haber un juego
         </p>
                 <!--Pie de página-->
-        <ul id="ul2">
-            <li><a href="portada.html">Portada</a></li>
+        <ul class="ul2">
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="cv.html" >Curriculum</a></li>  
             <li><a href="aficiones.html">Aficiones</a></li>
             <li><a href="juego.html">Juego</a></li>
