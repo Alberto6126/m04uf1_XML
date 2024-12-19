@@ -7,31 +7,35 @@
         <title>Contacto</title>
         <meta charset="UTF-8">
         <style>
-             html{
+            html{
                 height: 100%;
             }
             body{
                 height: 100%;
+                width: 100%;
                 margin: 0;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background: rgb(22, 0, 22);
                 background-image: linear-gradient(300deg, #000000, #030020);}
+            header{
+                background: rgb(22, 0, 22);
+                background-image: linear-gradient(90deg, #290c0c, #1b0424);
+                margin: 0;
+            }
             h1{
                 text-align: center;
                 color: #FFFFF5;
                 font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                letter-spacing: 6.5px;
-                line-height: 60px;
+                letter-spacing: 6.5px; /*espaciado entre letra y letra*/
+                line-height: 60px; /*altura de línea*/
                 font-size: 60px;
                 margin-top: -5px;
-                background: rgb(22, 0, 22);
-                background-image: linear-gradient(90deg, #290c0c, #1b0424);
                 padding: 70px;
                 padding-top: 30px;
                 padding-bottom: 80px;
 
-            }
+            } 
             h2{
                 margin-top: -135px;
                 text-align: center;
@@ -40,23 +44,18 @@
                 margin-bottom: -30px;
                 padding: 20px;
             }
-            h3{
-                color: hwb(219 51% 0%);
-                font-family:  'Ubuntu mono','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 20px;
-                letter-spacing: 2px;
-                line-height: 2px;
-            }
             p{ 
                 text-align: center;
-                font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
+                font-family: 'Ubuntu mono', Helvetica, sans-serif;
                 color: #ffffff;
                 position:relative;
 	            margin:0 auto;
-                margin-top: 80px;
+                margin-top: 100px;
                 margin-bottom: 40px;
-	            width:524px;
-	            }
+	            } 
+
+
+                /*Arreglar margin*/
             .ul1{
                 outline-color: white;
                 outline-width: 2px;
@@ -68,48 +67,29 @@
                 background: rgb(22, 0, 22);
                 background-image: linear-gradient(90deg, #290c0c, #1b0424);
                 position:relative;
-	            margin:0 auto;
-	            padding:30px;
-                padding-top: 10px;
-	            width:700px;
+                margin: auto;
+                margin-bottom: 40px;
+	            padding:60px;
+	            width:50%;
                 line-height: 30px;
-                margin-top:100px;
             }
             .ul2{
-                outline-color: white;
-                outline-width: 2px;
-                outline-style: solid;
-                border-radius: 10px;
-                font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
-                color: #ffffff;
-                background: rgb(56, 56, 56);              
-                background: rgb(22, 0, 22);
-                background-image: linear-gradient(90deg, #290c0c, #1b0424);
-                position:relative;
-	            margin:0 auto;
-                margin-bottom: 20px;
-	            padding:30px;
-	            width:700px;
-                line-height: 30px;
-                margin-top:40px;
-            }
-            .ul3{
                 font-family: 'Ubuntu mono','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 list-style: none;
                 display: flex;
-                justify-content:center;
-            } 
-            .ul3 >li > a {
+                align-items: center;
+                justify-content: center; 
+                /* margin-right: 170px; */
+            }
+            .ul2 >li > a {
                 outline-color: white;
                 outline-width: 3px;
                 outline-style: solid;
-                margin-left: 0px;
-                margin-right: 25px;
                 border-radius: 15px;
-                display:block;
-                padding: 15px 20px;
+                padding: 20px;
                 color: white;
                 text-decoration: none;
+                margin:30px;
             }
             .naranja{
                 color: rgb(255, 204, 109);
@@ -122,57 +102,49 @@
             .azul{
                 color: #039dc4;
             }
-            a{
-                text-decoration: none;
-                color: inherit;
-            }
-            .img1{
-                border-radius: 20px;
-                outline-style: solid;
-                outline-color: white;
-                margin: 10px;
-                margin-top: 30px;
-            }
-            .img2{
-                border-radius: 20px;
-                outline-style: solid;
-                outline-color: white;
-                margin: 10px;
-            }
-            .img3{
-                border-radius: 20px;
-                outline-style: solid;
-                outline-color: white;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
             .tituloAzul{
                 list-style: none;
                 margin-left: -10px;
             }
-            li{
-                margin-left: 30px;
+
+            footer{
+                position: relative;
+                background-color: #290c0c;
+                background-image: linear-gradient(300deg, rgb(10, 0, 34) 0%, rgb(54, 0, 16) 100%);
+                bottom: 0px;
+                margin-top:530px;
+                margin-right: 0;
+                margin-left:0;
+                width: 100%;
+                height: 50px;
+                padding: 60px;
             }
         </style>
     </head>
     <body>
-        <h1>
-            Hola
-        </h1>
-        <h2>
-            Contacto
-        </h2>
+        <header>
+            <h1>
+                 Hola
+            </h1>
+            
+             <h2>
+                Contacto
+            </h2>
+        </header>
+    <main>
         <p>
             Contacta conmigo
         </p>
-                <!--Pie de página-->
-        <ul class="ul3">
+    </main>
+              
+    <footer>
+        <ul class="ul2">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="cv.html" >Curriculum</a></li>  
             <li><a href="aficiones.html">Aficiones</a></li>
             <li><a href="juego.html">Juego</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
+    </footer>
     </body>
 </html>

@@ -8,30 +8,36 @@
         <title>Portfolio</title>
         <meta charset="UTF-8">
         <style>
-             html{
+            html{
                 height: 100%;
             }
             body{
                 height: 100%;
+                width: 100%;
                 margin: 0;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
+                background-repeat: initial;
+                background-attachment:local;
                 background: rgb(22, 0, 22);
-                background-image: linear-gradient(300deg, #000000, #030020);}
+                background-image: linear-gradient(90deg, #000000, #030020);}
+            header{
+                background: rgb(22, 0, 22);
+                background-image: linear-gradient(90deg, #290c0c, #1b0424);
+                margin-top: 0;
+                margin-bottom: 50px;
+            }
             h1{
                 text-align: center;
                 color: #FFFFF5;
                 font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                letter-spacing: 6.5px;
-                line-height: 60px;
+                letter-spacing: 6.5px; /*espaciado entre letra y letra*/
+                line-height: 60px; /*altura de línea*/
                 font-size: 60px;
                 margin-top: -5px;
-                background: rgb(22, 0, 22);
-                background-image: linear-gradient(90deg, #290c0c, #1b0424);
+                padding: 70px;
                 padding-top: 30px;
                 padding-bottom: 80px;
 
-            }
+            } 
             h2{
                 margin-top: -135px;
                 text-align: center;
@@ -40,74 +46,52 @@
                 margin-bottom: -30px;
                 padding: 20px;
             }
-            h3{
-                font-family:  'Ubuntu mono','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 20px;
-                letter-spacing: 2px;
-                line-height: 2px;
-            }
             p{ 
                 text-align: center;
-                font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
+                font-family: 'Ubuntu mono', Helvetica, sans-serif;
                 color: #ffffff;
                 position:relative;
 	            margin:0 auto;
-                margin-top: 80px;
+                margin-top: 100px;
                 margin-bottom: 40px;
-	            width:524px;
-	            }
+	            } 
+
+
+                /*Arreglar margin*/
             .ul1{
-                outline-color: white; 
-                outline-width: 2px;         /* Outline crea un trazo al rededor del padding*/
+                outline-color: white;
+                outline-width: 2px;
                 outline-style: solid;
-                border-radius: 10px;        /*Redondea los bordes*/
+                border-radius: 10px;
                 font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
                 color: #ffffff;
                 background: rgb(56, 56, 56);              
                 background: rgb(22, 0, 22);
                 background-image: linear-gradient(90deg, #290c0c, #1b0424);
-	            margin:0 auto;
+                position:relative;
+                margin: auto;
+                margin-bottom: 50px;
 	            padding:30px;
-                padding-top: 10px;
-                width: 700px;
+	            width:50%;
                 line-height: 30px;
-                margin-top:100px;
             }
             .ul2{
-                outline-color: white; 
-                outline-width: 2px;         /* Outline crea un trazo al rededor del padding*/
-                outline-style: solid;
-                border-radius: 10px;        /*Redondea los bordes*/
-                font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
-                color: #ffffff;
-                background: rgb(56, 56, 56);              
-                background: rgb(22, 0, 22);
-                background-image: linear-gradient(90deg, #290c0c, #1b0424);
-	            margin:0 auto;
-	            padding:30px;
-                padding-top: 10px;
-                width: 700px;
-                line-height: 30px;
-                margin-top:40px;
-            }
-            .ul3{
                 font-family: 'Ubuntu mono','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 list-style: none;
                 display: flex;
-                justify-content:center;
-                margin-top: 30px;
-            } 
-            .ul3 >li > a {
+                align-items: center;
+                justify-content: center; 
+                /* margin-right: 170px; */
+            }
+            .ul2 >li > a {
                 outline-color: white;
                 outline-width: 3px;
                 outline-style: solid;
-                margin-left: 0px;
-                margin-right: 25px;
                 border-radius: 15px;
-                display:block;
-                padding: 15px 20px;
+                padding: 20px;
                 color: white;
                 text-decoration: none;
+                margin:30px;
             }
             .naranja{
                 color: rgb(255, 204, 109);
@@ -120,50 +104,67 @@
             .azul{
                 color: #039dc4;
             }
-            .verde{
-                color:#7fffd4;
+            .tituloAzul{
+                list-style: none;
+                margin-left: -10px;
+            }
+
+            footer{
+                position: relative;
+                background-color: #290c0c;
+                background-image: linear-gradient(300deg, rgb(10, 0, 34) 0%, rgb(54, 0, 16) 100%);
+                bottom: 0px;
+                margin-bottom: 0;
+                margin-right: 0;
+                margin-left:0;
+                width: 100%;
+                height: 50px;
+                padding: 60px;
+                padding-left: 0px;
             }
             a{
+                color: white;
                 text-decoration: none;
-                color: inherit;
+            }
+            .img{
+                    outline-color: white;
+                    text-align: center;
             }
             .img1{
-                border-radius: 20px;
                 outline-style: solid;
-                outline-color: white;
-                margin: 10px;
-                margin-top: 30px;
+                border-radius: 20px;
+                margin:10px;
             }
             .img2{
-                border-radius: 20px;
                 outline-style: solid;
-                outline-color: white;
-                margin: 10px;
+                border-radius: 20px;
+                margin:10px;
             }
             .img3{
-                border-radius: 20px;
                 outline-style: solid;
-                outline-color: white;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+                border-radius: 20px;
+                margin:10px;
+                position: relative;
             }
         </style>
     </head>
     <body>
+     <header>
         <h1>
             Portfolio
         </h1>   
         <h2>
             Formación y proyectos personales
         </h2>
+     </header>
+     <main>
                 <ul class="ul1"><!--h3 fuera + añadir section-->
                     <li><h3><strong class = "azul">Formación</strong></h3></li>
                     <li><strong>Educación Secundaria Obligatoria</strong> <em> 2018-2022</em></li>
                     <li><strong>Bachillerato de artes </strong> <em> Jesuitas el Clot 2022-2024</em></li>
                     <li><strong>Desarrollo de aplicaciones multiplataforma </strong> <em> ENTI 2024-Actualidad</em></li>
                  </ul>
-                 <ul class="ul2"><!--h3 fuera + añadir section-->
+                 <ul class="ul1"><!--h3 fuera + añadir section-->
                     <li><h3><strong class="azul">Aptitudes y herramientas</strong></h3></li>
                     <li>C++<em class="naranja"> Básico</em>,<em class="verde"> desde 2024</em></li>
                     <li>SQL<em class="naranja"> Básico</em>,<em class="verde"> desde 2024 </em></li>
@@ -177,20 +178,22 @@
                     <li>Substance Painter <em class="naranja"> Básico</em>, <em class="verde">desde 2024 </em></li>
                     <li>Autocad - Autodesk <em class="naranja"> Intermedio</em>, <em class="verde">desde 2022 </em></li>
                  </ul>
-                 <ul class="ul2"><!--h3 fuera + añadir section-->
+                 <ul class="ul1"><!--h3 fuera + añadir section-->
                  <li><h3><strong class = "azul">Proyectos personales:</strong></h3>
                     <li><em><a href="https://youtu.be/Wb5Y_tSltxI">Creación de mapas y texturas para Assetto Corsa, 2022-Actualidad </a></em></li>
                     <li><em><a href="https://youtu.be/tEF_NerhL3A">Scripts para Kerbal Space Program (KOS), 2020-Actualidad</a></em></li>
                     <li><em>Creación de renders y pantallas de carga con Blender, 2022-2023</em></li>
-                    <img class="img1" src="img/bcs.webp"><img class="img2" src="img/pollosh.webp"><img class="img3" src="img/ksp.webp">
+                    <p class="img"><img class="img1" src="img/bcs.webp"><img class="img2" src="img/pollosh.webp"><img class="img3" src="img/ksp.webp"></p>
                 </ul>
-        </ul>
-    </ul>
-        <ul class="ul3">
+            </main>
+    <footer>
+        <ul class="ul2">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="cv.html" >Curriculum</a></li>  
             <li><a href="aficiones.html">Aficiones</a></li>
             <li><a href="juego.html">Juego</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
     </body>
 </html>
